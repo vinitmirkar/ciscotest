@@ -30,7 +30,7 @@ class DrawCircleAnDLines
 
         $draw->setStrokeWidth(2);
         $draw->setFontSize(72);
-
+        $draw->setFillOpacity(0.1);
         foreach($this->_xyCoordinatesForCircle as $circleXYCoordinates){
             $draw->circle($circleXYCoordinates['originX'], $circleXYCoordinates['originY'], $circleXYCoordinates['endX'], $circleXYCoordinates['endY']);
         }
@@ -58,11 +58,11 @@ $circleDraw = [
 ];
 
 $lineDraw = [
-    ['originX' => 60, 'originY' => 40, 'endX' => 350, 'endY' => 40],
-    ['originX' => 50, 'originY' => 40, 'endX' => 100, 'endY' => 150],
-    ['originX' => 100, 'originY' => 150, 'endX' => 180, 'endY' => 260],
-    ['originX' => 180, 'originY' => 280, 'endX' => 300, 'endY' => 150],
-    ['originX' => 300, 'originY' => 150, 'endX' => 350, 'endY' => 40]
+    ['originX' => 70, 'originY' => 40, 'endX' => 330, 'endY' => 40],
+    ['originX' => 55, 'originY' => 60, 'endX' => 90, 'endY' => 130],
+    ['originX' => 110, 'originY' => 170, 'endX' => 170, 'endY' => 240],
+    ['originX' => 190, 'originY' => 240, 'endX' => 290, 'endY' => 167],
+    ['originX' => 310, 'originY' => 130, 'endX' => 350, 'endY' => 60]
 ];
 
 $drawCircle1 = new DrawCircleAnDLines('#ffffff', $circleDraw, $lineDraw, '#000000');
